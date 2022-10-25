@@ -1,108 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     width: 1440px;
     height: 1024px;
     background: linear-gradient(#B02A2A, #A11B1B);
     margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.flexbox-header {
-    display: flex;
+.header {
     width: 100%;
+    justify-content: space-between;
 }
 
-.title {
-    display: flex;
-    margin: 45px;
-    width: 93%;
+.header>div:nth-child(1) {
+    width: 83px;
     height: 36px;
-    font-family: sans-serif;
+    margin: 45px 0 0 45px;
 }
 
-.title div {
-    color: #E7FFDE
+.header h1 {
+    color: #EEE;
 }
 
 .icons {
-    display: flex;
-    margin: 45px;
-    width: 7%;
-    flex-direction: row;
+    width: 109px;
+    height: 36px;
 }
 
-.icons div {
-    margin: 5px;
+.icons {
+    margin: 45px 45px 0 0;
+    justify-content: space-between;
 }
 
-.icons div:hover {
-    opacity: .7;
-    cursor: pointer;
+.library-icon {
+    width: 35px;
+    height: 35px;
 }
 
-.flexbox-body {
-    display: block;
-    width: 100%;
+.search-icon {
+    width: 36px;
+    height: 36px;
 }
 
-.bg-text {
-  display: flex;
-    flex-wrap: nowrap;
-    width: 1986px;
-    height: 225px;
-    font-family: 'Red Hat Text';
-    font-size: 400px;
-    line-height: 76.3%;
-    letter-spacing: -0.3rem;
-    color: #EEE;
-    opacity: .4;
-    z-index: -1;
+.img {
+    position: absolute;
+    top: 125px;
+    right: 196px;
+    width: 652px;
+    height: 905px;
 }
 
-.primary-text {
-    display: flex;
-    font-family: 'Red Hat Text';
-    font-weight: 700;
-    font-size: 200px;
-    line-height: 76.3%;
-    letter-spacing: -0.03em;
-    width: 552px;
-    height: 153px;
-    color: #fff;
+.text {
+    width: 882px;
 }
 
-.secondary-text {
-    display: flex;
-    width: 373px;
-    height: 112px;
-    font-family: 'Raleway';
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.6rem;
-    color: #F7F7F7;
-}
 
-.secondary-text div {
-    width: 100%;
-    height: 100%;
-}
 
-.btn {
-    display: flex;
-    width: 211px;
-    height: 66px;
-}
-
-.btn button {
-    background-color: #000;
-    color: #FFF;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    border: none;
-}
