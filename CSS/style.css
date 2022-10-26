@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-* {
+body {
     margin: 0;
     padding: 0;
+    font-family: "Raleway";
 }
 
 .container {
@@ -13,60 +14,265 @@
     height: 1024px;
     background: linear-gradient(#B02A2A, #A11B1B);
     margin: auto;
+    color: #FFF;
+    position: absolute;
 }
 
 .flex {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
-.header {
+header {
+    padding: 45px 76px 0 62px;
     width: 100%;
+    height: 100px;
     justify-content: space-between;
 }
 
-.header>div:nth-child(1) {
+.header div {
     width: 83px;
     height: 36px;
-    margin: 45px 0 0 45px;
 }
 
-.header h1 {
-    color: #EEE;
+.groovy {
+    width: 83px;
+    height: 36px;
+    background-image: url("../Assets/Icons/logo.png");
+    background-size: cover;
 }
 
 .icons {
+    justify-content: space-between;
     width: 109px;
     height: 36px;
 }
 
-.icons {
-    margin: 45px 45px 0 0;
+.search {
+    background-image: url("/Assets/Icons/search.png");
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.search:hover {
+    opacity: .7;
+}
+
+.library {
+    background-image: url("/Assets/Icons/library.png");
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.library:hover {
+    opacity: .7;
+}
+
+.body-left {
+    width: 788px;
+    height: 834px;
+}
+
+.body-left .content {
+    width: 688px;
+    height: 737px;
+}
+
+.content h1 {
+    font-family: "Red Hat Text";
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 76.3%;
+    letter-spacing: -0.03em;
+    margin: 170px 0 57px 137px;
+}
+
+.content p {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.06em;
+    color: #F7F7F7;
+    margin: 0 0 52px 145px
+}
+
+.content button {
+    background-color: #000;
+    color: #FFF;
+    width: 211px;
+    height: 66px;
+    border-radius: 33px;
+    margin: 0 0 190px 145px;
+    border: none;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: rgba(10, 10, 10,  .8);
+}
+
+
+.social-net {
+    margin-left: 145px;
+    margin-bottom: 52px;
+    width: 176px;
+    height: 32px;
     justify-content: space-between;
 }
 
-.library-icon {
-    width: 35px;
-    height: 35px;
+.social-net i {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease-in-out;
 }
 
-.search-icon {
-    width: 36px;
-    height: 36px;
+.social-net i:hover {
+    transform: scale(1.2);
 }
 
-.img {
-    position: absolute;
-    top: 125px;
-    right: 196px;
+.facebook {
+    background-image: url("/Assets/Icons/facebook.png");
+}
+
+.twitter {
+    background-image: url("/Assets/Icons/twitter.png");
+}
+
+.instagram {
+    background-image: url("/Assets/Icons/instagram.png");
+}
+
+.youtube {
+    background-image: url("/Assets/Icons/youtube.png");
+}
+
+.body-right {
+    background-image: url("/Assets/Img/pexels-philip-boakye-2614384-removebg-preview\ 1.png");
+    background-size: cover;
+    background-position: bottom right;
     width: 652px;
-    height: 905px;
+    height: 878px;
 }
 
-.text {
-    width: 882px;
+.music-player {
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 0px;
+    right: 0px;
+    width: 857px;
+    height: 221px;
+    background-color: rgba(0, 0, 0, .5);
 }
 
+.prev-song {
+    background-image: url("/Assets/Icons/previous-song.png");
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 99px 18px 99px 18px;
+}
 
+.album-cover {
+    margin: 26px 0;
+}
 
+.music-player h1 {
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15.26px;
+    letter-spacing: -0.03em;
+    margin-top: 30px;
+    margin-left: 39px;
+}
+
+.shuffle-btn {
+    background-image: url("/Assets/Icons/shuffle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.backward-btn {
+    background-image: url("/Assets/Icons/backward.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 24px;
+    background-color: transparent;
+    border: none; 
+}
+
+.play-btn {
+    background-image: url("/Assets/Icons/play-circle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 92px;
+    width: 92px;
+    background-color: transparent;
+    border: none;
+}
+
+.forward-btn {
+    background-image: url("/Assets/Icons/forward.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 24px;
+    background-color: transparent;
+    border: none; 
+}
+
+.repeat-btn {
+    background-image: url("/Assets/Icons/repeat.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.volume-btn {
+    background-image: url("/Assets/Icons/volume.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+}
+
+.next-song {
+    background-image: url("/Assets/Icons/next-song.png");
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
