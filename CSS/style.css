@@ -12,7 +12,7 @@ body {
     flex-wrap: wrap;
     width: 1440px;
     height: 1024px;
-    background: linear-gradient(#B02A2A, #A11B1B);
+    background: linear-gradient(#B02A2A 0%, #A11B1B 18%, rgb(105, 18, 18) 100%);
     margin: auto;
     color: #FFF;
     position: absolute;
@@ -48,7 +48,7 @@ header {
 }
 
 .search {
-    background-image: url("/Assets/Icons/search.png");
+    background-image: url("../Assets/Icons/search.png");
     background-size: cover;
     width: 36px;
     height: 36px;
@@ -61,7 +61,7 @@ header {
 }
 
 .library {
-    background-image: url("/Assets/Icons/library.png");
+    background-image: url("../Assets/Icons/library.png");
     background-size: cover;
     width: 36px;
     height: 36px;
@@ -108,6 +108,7 @@ header {
     height: 66px;
     border-radius: 33px;
     margin: 0 0 190px 145px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
 }
@@ -139,23 +140,23 @@ header {
 }
 
 .facebook {
-    background-image: url("/Assets/Icons/facebook.png");
+    background-image: url("../Assets/Icons/facebook.png");
 }
 
 .twitter {
-    background-image: url("/Assets/Icons/twitter.png");
+    background-image: url("../Assets/Icons/twitter.png");
 }
 
 .instagram {
-    background-image: url("/Assets/Icons/instagram.png");
+    background-image: url("../Assets/Icons/instagram.png");
 }
 
 .youtube {
-    background-image: url("/Assets/Icons/youtube.png");
+    background-image: url("../Assets/Icons/youtube.png");
 }
 
 .body-right {
-    background-image: url("/Assets/Img/pexels-philip-boakye-2614384-removebg-preview\ 1.png");
+    background-image: url("../Assets/Img/pexels-philip-boakye-2614384-removebg-preview\ 1.png");
     background-size: cover;
     background-position: bottom right;
     width: 652px;
@@ -174,7 +175,7 @@ header {
 }
 
 .prev-song {
-    background-image: url("/Assets/Icons/previous-song.png");
+    background-image: url("../Assets/Icons/previous-song.png");
     background-size: cover;
     background-position: center;
     width: 11px;
@@ -186,7 +187,19 @@ header {
 }
 
 .album-cover {
-    margin: 26px 0;
+    position: absolute;
+    top: 25px;
+    left: 43px;
+}
+
+.controls {
+    width: 505px;
+    margin-left: 300px;
+    flex-wrap: wrap;
+}
+
+.controls button {
+    cursor: pointer;
 }
 
 .music-player h1 {
@@ -197,11 +210,11 @@ header {
     line-height: 15.26px;
     letter-spacing: -0.03em;
     margin-top: 30px;
-    margin-left: 39px;
+    margin-right: 290px;
 }
 
 .shuffle-btn {
-    background-image: url("/Assets/Icons/shuffle.png");
+    background-image: url("../Assets/Icons/shuffle.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,10 +222,12 @@ header {
     width: 24px;
     background-color: transparent;
     border: none;
+    margin-right: 37px;
+    margin-top: 20px;
 }
 
 .backward-btn {
-    background-image: url("/Assets/Icons/backward.png");
+    background-image: url("../Assets/Icons/backward.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,10 +235,12 @@ header {
     width: 24px;
     background-color: transparent;
     border: none; 
+    margin-right: 37px;
+    margin-top: 20px;
 }
 
 .play-btn {
-    background-image: url("/Assets/Icons/play-circle.png");
+    background-image: url("../Assets/Icons/play-circle.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,7 +251,7 @@ header {
 }
 
 .forward-btn {
-    background-image: url("/Assets/Icons/forward.png");
+    background-image: url("../Assets/Icons/forward.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,10 +259,12 @@ header {
     width: 24px;
     background-color: transparent;
     border: none; 
+    margin-left: 37px;
+    margin-top: 20px;
 }
 
 .repeat-btn {
-    background-image: url("/Assets/Icons/repeat.png");
+    background-image: url("../Assets/Icons/repeat.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -253,10 +272,12 @@ header {
     width: 24px;
     background-color: transparent;
     border: none;
+    margin-left: 37px;
+    margin-top: 20px;
 }
 
 .volume-btn {
-    background-image: url("/Assets/Icons/volume.png");
+    background-image: url("../Assets/Icons/volume.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -264,10 +285,12 @@ header {
     width: 24px;
     background-color: transparent;
     border: none;
+    margin-left: 37px;
+    margin-top: 20px;
 }
 
 .next-song {
-    background-image: url("/Assets/Icons/next-song.png");
+    background-image: url("../Assets/Icons/next-song.png");
     background-size: cover;
     background-position: center;
     width: 11px;
@@ -275,4 +298,16 @@ header {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
+    margin-left: 80px;
 }
+
+
+.progress-bar {
+    background-image: url("../Assets/Icons/progress-bar.png");
+    background-size: cover;
+    background-position: center;
+    width: 472px;
+    height: 6px;
+}
+
